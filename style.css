@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+body{
+    background: #c83575;
+}
+
+section{
+    padding:5rem;
+}
+
+.heading{
+    background: url("img/heading-bg.jpg") no-repeat;
+    background-size:cover;
+    background-position: center;
+    padding: 6rem 13rem;
+}
+
+.heading h1{
+    color: #fff;
+    font-size: 7rem;
+    font-family: 'Niconne';
+    font-weight: 400;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.about .img{
+    flex: 1 1 35rem;
+    padding-right: 3rem;
+}
+
+.about .img img{
+    width: 100%;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+}
+
+.about .content{
+    flex: 1 1 40rem;
+}
+
+.about .content h3{
+    color:#fff;
+    font-size: 2.5rem;
+    text-transform: none;
+    font-weight: 500;
+}
+
+.about .content p{
+    color:#222;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    padding:2rem 0;
+    text-transform: none;
+    text-align: justify;
+    font-weight: 400;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.8rem 3rem;
+    background: #c83575;
+    color:#fff;
+    font-size:1.5rem;
+    cursor: pointer;
+    box-shadow: 0 0.4rem 0.7rem rgba(0, 0, 0, 0.6);
+}
+
+.btn:hover{
+    background: #222;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+}
+
+.customer-review{
+    margin: 2rem;
+}
+
+.customer-review .review-heading{
+    text-transform: none;
+    color:#fff;
+    font-size: 3rem;
+    text-transform: none;
+    text-align: center;
+    margin-top: 6rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+@media (max-width: 780px){
+    .heading h1{
+        font-size: 5rem;
+        font-weight: 400;
+        word-spacing: 3px;
+        letter-spacing: 1px;
+    }
+    .heading{
+        padding: 5rem 10rem;
+    }
+    .about .img{
+        flex: 1 1 25rem;
+        padding-right: 3rem;
+    }
+    .about .content{
+        flex: 1 1 30rem;
+    }
+}
+
+@media (max-width: 585px){
+    .about .img{
+        display: none;
+    }
+    .heading{
+        padding: 5rem 6rem;
+    }
+    .customer-review .review-heading{
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+}

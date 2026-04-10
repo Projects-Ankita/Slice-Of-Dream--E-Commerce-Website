@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="../Home/home_style1.css">
+</head>
+<body>
+    <!-- header section start page -->
+
+    <header class="header">
+        <div class="logo"> <img src="../Home/cake_icon.png"> Piece of Cake </div>
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#">Category</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+            <div id="cart-btn" class="fas fa-shopping-cart"></div>
+            <a href="../Sign In & Sign Up/signin_signup.html">"<div id="login-btn" class="fas fa-user"></div></a>
+        </div>
+    </header>
+    <br><br><br><br><br><br><br>
+    
+    <section class="product-details">
+        <div class="image">
+            <img src="../Images/Cakes/Chocolate/1. Chocolate Drip Cake.jpg" alt="">
+        </div>
+        <div class="details">
+            <h2 class="product-name">Chocolate drip cake</h2>
+            <div class="product-price">&#8377 400</div>
+            <p class="product-sub-heading">select cake weight</p>
+
+            <input type="radio" name="weight" value="500gm" checked hidden id="500grams">
+            <label for="500grams" class="weight-radio-btn check" >500gm</label>
+
+            <input type="radio" name="weight" value="750gm" hidden id="750grams">
+            <label for="750grams" class="weight-radio-btn">750gm</label>
+
+            <input type="radio" name="weight" value="1kg" hidden id="1kg">
+            <label for="1kg" class="weight-radio-btn">1 kg</label>
+
+            <button class="btn cart-btn">add to cart</button>
+            <button class="btn">add to wishlist</button>
+
+        </div>
+    </section>
+
+    <section class="description">
+        <h2 class="heading">description</h2>
+        <p class="desc">The spongy texture combined with the dark melting chocolate will make your spirits go round and round. The extra creamy taste will cross the heights of smoothness and will leave you amazed. Garnish with choco chips is a deal maker.</p>
+
+        <h2 class="heading">Delivery Details</h2>
+        <ul class="desc">
+            <li> The delicious cake is hand-delivered by our delivery boy in a good quality cardboard box.</li>
+            <li>Candle and knife will be delivered as per the availability.</li>
+
+        </ul>
+        <h2 class="heading">Care Instructions</h2>   
+        <ul class="desc">  
+            <li>Store cake in a refrigerator.</li>
+            <li>Consume cake within 24 hours.</li>
+        </ul> 
+    </section>
+    <script src="product.js"></script>
+</body>
+</html>
